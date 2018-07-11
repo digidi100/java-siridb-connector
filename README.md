@@ -10,7 +10,7 @@ After you've installed QPack succesfully, you need to install the connector itse
 
 ## Example
 
-The code shown in the example makes use of a countDownLatch which waits until requests have been completed. In this case, the connector functions asynchronously and shouldn't block the main thread. The result of the query and insertion will be stored in a blocking queue. This blocking queue waits until the completionHandlers returns a result. This result will be printed afterwards. You may need to replace the input values of the connection if you want to verify this demo. The example can be found [here](example/Example.java).
+The code shown in the example makes use of a countDownLatch which waits until requests have been completed. In this case, the connector functions asynchronously and shouldn't block the main thread. The result of the query and insertion will be stored in a blocking queue. This blocking queue waits until the completionHandlers returns a result. This result will be printed afterwards. You may need to replace the input values of the connection if you want to verify this demo. The example can be found [here](src/example/Example.java).
 
 The example supports a single connection. If you want to support multiple connections at the same time, you can create a Client object. The same methods apply for the Client as for the Connection object. An example of how to create a Client can be found below.
 
